@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ulu Önder Mustafa Kemal Atatürk, Türkiye Cumhuriyeti'nin Kurucusudur.">
+    <title>Ulu Önder Mustafa Kemal Atatürk</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Grenze:400,500&display=swap" rel="stylesheet">
+    <style>.black {
+            background-color: black
+        }
+
+        .white {
+            color: white
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .full-page {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .font-letter {
+            font-family: 'Grenze', serif;
+            font-size: 20pt;
+        }
+
+        .bg-overlay {
+            background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url("/bg.b0e51888.jpeg");
+            background-repeat: no-repeat;
+            background-position: right center;
+            color: #fff;
+            height: 450px;
+            padding-top: 50px;
+        }</style>
+</head>
+
+<body class="black bg-overlay">
+
+    <section class="h-100">
+        <header class="container h-100">
+            <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="d-flex flex-column white">
+                    <p class="font-letter" id="letter-text">
+
+                    </p>
+                    <p>
+                        <img src="/signature.2a40fbc9.png" width="200px">
+                    </p>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>$(function () {
+  $.getJSON('source.json', function (data) {
+    var list = data.items;
+    $("#letter-text").html(list[~~(list.length * Math.random())].text);
+  });
+});</script>
+
+</body></html>

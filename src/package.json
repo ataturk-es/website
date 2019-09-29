@@ -1,0 +1,23 @@
+{
+  "name": "ataturk-es-web-page",
+  "version": "1.0.0",
+  "description": "Mustafa Kemal Ataturk",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ataturk-es/website.git"
+  },
+  "author": "Cagdas Karademir",
+  "homepage": "https://github.com/ataturk-es/website/blob/master/README.md",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-static-files-copy": "^2.2.1"
+  },
+  "staticFiles": {
+    "staticPath": "data"
+}
+}
