@@ -4,7 +4,6 @@
   "description": "Mustafa Kemal Ataturk",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html"
   },
   "repository": {
